@@ -1,13 +1,14 @@
-name: " a basic wokflow"
+name: "a basic workflow"
+
 on:
   push:
     branches:
       - master
-      - production 
+      - production
 
 jobs:
-    basic_workflow:
-        runs-on: ubuntu-latest
-        steps:
-            - name: "print hello world"
-            - run: echo "hello world"
+  basic_workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Print hello world"
+        run: echo "hello world"
