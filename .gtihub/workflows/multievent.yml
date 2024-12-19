@@ -1,13 +1,14 @@
-name: "multievent workflow pipeline/workflow"  #name of the pipeline 
+name: "multievent workflow pipeline/workflow"  # Name of the workflow
 
-on:  # event: whenver a push is made to the repository on the master branch 
+on:  # Event triggers
   push:
     branches:
-       - master
+      - master
 
 jobs:
-  on-push: #job name 
-    runs-on : ubuntu-latest
-    steps: #steps to be executed 
-    - name: "running on master push"
-      run: echo "running on master push"
+  on-push:  # Job name
+    runs-on: ubuntu-latest  # Specifies the runner environment
+
+    steps:  # Steps to be executed
+      - name: "running on master push"
+        run: echo "running on master push"
